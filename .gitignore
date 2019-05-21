@@ -98,7 +98,6 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-tools/
 build/
 output/
 Resource.Designer.cs
