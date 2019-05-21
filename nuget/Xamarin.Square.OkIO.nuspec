@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Xamarin.Square.OkIO</id>
+        <version>1.14.0</version>
+        <title>OkIO</title>
+        <authors>Josué Díaz</authors>
+        <license type="file">LICENSE.txt</license>
+        <projectUrl>https://github.com/JosueDM94/Xamarin.Square</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/JosueDM94/Xamarin.Square/master/icons/square_64x64.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>OkIO is a new library that complements Java.IO and Java.Nio to make it much easier to access, store, and process your data.</description>
+        <summary>A modern I/O API for Java.</summary>
+        <releaseNotes></releaseNotes>
+        <copyright>Square</copyright>
+        <tags>xamarin,android,monodroid,okio,square</tags>
+        <dependencies></dependencies>
+    </metadata>
+    <files>
+        <file src="output/README.md" target="README.md" />
+        <file src="output/LICENSE.txt" target="LICENSE.txt" />        
+        <file src="output/Square.OkIO.dll" target="lib\MonoAndroid\Square.OkIO.dll" />
+    </files>
+</package>

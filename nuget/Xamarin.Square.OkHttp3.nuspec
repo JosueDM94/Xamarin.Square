@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Xamarin.Square.OkHttp3</id>
+        <version>3.9.0</version>
+        <title>OkHttp v3</title>
+        <authors>Josué Díaz</authors>
+        <license type="file">LICENSE.txt</license>
+        <projectUrl>https://github.com/JosueDM94/Xamarin.Square</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/JosueDM94/Xamarin.Square/master/icons/square_64x64.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>An HTTP+HTTP/2 client for Android and Java applications.</description>
+        <summary>An HTTP+HTTP/2 client for Android and Java applications.</summary>
+        <releaseNotes></releaseNotes>
+        <copyright>Square</copyright>
+        <tags>xamarin,android,monodroid,okhttp,square</tags>
+        <dependencies>
+            <dependency id="Square.OkIO" version="1.13.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="output/README.md" target="README.md" />
+        <file src="output/LICENSE.txt" target="LICENSE.txt" />
+        <file src="output/Square.OkHttp3.dll" target="lib\MonoAndroid\Square.OkHttp3.dll" />
+    </files>
+</package>
