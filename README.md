@@ -18,15 +18,15 @@ sh bootstrapper.sh --target nuget
 - fast          Shortcut for nuget
 - default       Shortcut for all previous steps
 
-# Libraries
+## Libraries
 Bound:
 
-  - **OkHttp3** - https://github.com/square/okhttp3
-   An HTTP+SPDY client for Android and Java applications
-   [binding][1] | [sample][11] | [NuGet][21]
- - **OkIO** - https://github.com/square/okio
-   A modern I/O API for Java
-   [binding][2] | [sample][11] | [NuGet][22]
+  - **OkHttp3** - https://github.com/square/okhttp3  
+    An HTTP+SPDY client for Android and Java applications  
+   | [binding][1] | [sample][11] | [NuGet][21] |  
+ - **OkIO** - https://github.com/square/okio  
+   A modern I/O API for Java  
+   | [binding][2] | [sample][11] | [NuGet][22] |  
 
 [1]:  https://github.com/JosueDM94/Xamarin.Square/tree/master/binding/Square.OkHttp
 [2]:  https://github.com/JosueDM94/Xamarin.Square/tree/master/binding/Square.OkIO
