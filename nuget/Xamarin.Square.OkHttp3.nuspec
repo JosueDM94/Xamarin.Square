@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Xamarin.Square.OkHttp3</id>
-        <version>3.9.1</version>
+        <version>3.10.0</version>
         <title>OkHttp3</title>
         <authors>Josué Díaz</authors>
         <license type="file">LICENSE.txt</license>
@@ -15,7 +15,7 @@
         <copyright>Square</copyright>
         <tags>xamarin android monodroid okhttp okhttp3 square</tags>
         <dependencies>
-            <dependency id="Square.OkIO" version="1.13.0" />
+            <dependency id="Xamarin.Square.OkIO" version="1.14.0" />
         </dependencies>
     </metadata>
     <files>
