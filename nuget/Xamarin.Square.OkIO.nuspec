@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Xamarin.Square.OkIO</id>
-        <version>1.16.0</version>
+        <version>1.17.0</version>
         <title>OkIO</title>
         <authors>Josué Díaz</authors>
         <license type="file">LICENSE.txt</license>
         <projectUrl>https://github.com/JosueDM94/Xamarin.Square</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/JosueDM94/Xamarin.Square/master/icons/square_64x64.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/JosueDM94/Xamarin.Square/master/icons/square_128x128.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>OkIO is a new library that complements Java.IO and Java.Nio to make it much easier to access, store, and process your data.</description>
         <summary>A modern I/O API for Java.</summary>
