@@ -1,30 +1,34 @@
 <metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-
+    <!-- Normalize the namespace for .NET -->
     <attr path="/api/package[@name='okio']" name="managedName">Square.OkIO</attr>
-
-    <remove-node path="/api/package/class[@visibility='']" />
-
-    <attr path="/api/package[@name='okio']/class[@name='Buffer']" name="managedName">OkBuffer</attr>
     <attr path="/api/package[@name='okio']/class[@name='Okio']" name="managedName">OkIO</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']" name="managedName">OkBuffer</attr>
 
-    <!-- inheritance fixes -->
-    <attr path="/api/package[@name='okio']/class[@name='ByteString']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
-
-    <!-- methods to prooperties -->
-    <attr path="/api/package[@name='okio']/interface[@name='BufferedSource']/method[@name='buffer']" name="managedName">GetBuffer</attr>
-    <attr path="/api/package[@name='okio']/interface[@name='BufferedSink']/method[@name='buffer']" name="managedName">GetBuffer</attr>
-    <attr path="/api/package[@name='okio']/interface[@name='BufferedSink']/method[@name='outputStream']" name="managedName">GetOutputStream</attr>
-    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='buffer']" name="managedName">GetBuffer</attr>
-    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='outputStream']" name="managedName">GetOutputStream</attr>
+    <!-- Inheritance Fixes -->
     <attr path="/api/package[@name='okio']/class[@name='Options']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
-  
+    <attr path="/api/package[@name='okio']/class[@name='ByteString']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    
+    <!-- Return IBufferedSink-->
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='emitCompleteSegments' and count(parameter)=0]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeInt' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='byte[]']]" name="managedReturn" >IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeIntLe' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeLong' and count(parameter)=1 and parameter[1][@type='long']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeShort' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeLongLe' and count(parameter)=1 and parameter[1][@type='long']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeShortLe' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>    
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='okio.ByteString']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeDecimalLong' and count(parameter)=1 and parameter[1][@type='long']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeUtf8CodePoint' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeUtf8' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeHexadecimalUnsignedLong' and count(parameter)=1 and parameter[1][@type='long']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=2 and parameter[1][@type='okio.Source'] and parameter[2][@type='long']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeString' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.nio.charset.Charset']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeUtf8' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">IBufferedSink</attr>
+    <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeString' and count(parameter)=4 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='java.nio.charset.Charset']]" name="managedReturn">IBufferedSink</attr>
+    
     <!-- Ambiguous -->
     <add-node path="/api/package[@name='okio']/interface[@name='BufferedSink']">
         <method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
