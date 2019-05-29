@@ -15,6 +15,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidEnableDesugar>True</AndroidEnableDesugar>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
