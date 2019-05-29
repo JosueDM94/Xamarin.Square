@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Xamarin.Square.OkIO</id>
-        <version>1.17.0</version>
+        <version>1.17.1</version>
         <title>OkIO</title>
         <authors>Josué Díaz</authors>
         <license type="file">LICENSE.txt</license>
@@ -13,7 +13,7 @@
         <summary>A modern I/O API for Java.</summary>
         <releaseNotes></releaseNotes>
         <copyright>Square</copyright>
-        <tags>xamarin android monodroid okio square</tags>
+        <tags>Xamarin Android Monodroid OkIO Okio Square</tags>
         <dependencies></dependencies>
     </metadata>
     <files>

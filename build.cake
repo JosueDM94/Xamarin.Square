@@ -29,8 +29,9 @@ public enum TargetOS {
 // VERSIONS
 //////////////////////////////////////////////////////////////////////
 
-const string okio_version                 = "1.17.0"; // OkIO
-const string okhttp3_version              = "3.12.0"; // OkHttp3
+const string okio_version                 = "1.17.1"; // OkIO
+const string okhttp3_version              = "3.12.1"; // OkHttp3
+const string logging_interceptor_version  = "3.9.0";  // Logging-Interceptor
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // TOOLS & FUNCTIONS - the bits to make it all work
@@ -328,6 +329,9 @@ Task ("externals")
     DownloadJar ("com/squareup/okhttp3/okhttp/{0}/okhttp-{0}.jar",
                  "externals/OkHttp3/okhttp3.jar",
                  okhttp3_version);
+    DownloadJar ("com/squareup/okhttp3/logging-interceptor/{0}/logging-interceptor-{0}.jar",
+                 "externals/LoggingInterceptor/logging-interceptor.jar",
+                 logging_interceptor_version);
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -347,7 +351,8 @@ Task ("libs")
     
     var outputs = new List<string> {
         "Square.OkIO/bin/Release/Square.OkIO.dll",
-        "Square.OkHttp3/bin/Release/Square.OkHttp3.dll"
+        "Square.OkHttp3/bin/Release/Square.OkHttp3.dll",
+        "Square.LoggingInterceptor/bin/Release/Square.LoggingInterceptor.dll"
     };
     
     foreach (var output in outputs) {
@@ -368,9 +373,10 @@ Task ("nuget")
     .Does (() => 
 {
     DeleteFiles ("./output/*.nupkg");
-    var nugets = new List<string> {
+    var nugets = new List<string> {        
+        "./nuget/Xamarin.Square.OkIO.nuspec",
         "./nuget/Xamarin.Square.OkHttp3.nuspec",
-        "./nuget/Xamarin.Square.OkIO.nuspec"
+        "./nuget/Xamarin.Square.LoggingInterceptor.nuspec"
     };
     foreach (var nuget in nugets) {
         PackageNuGet (nuget, "./output/");
@@ -387,7 +393,8 @@ Task ("samples")
     .Does (() => 
 {
     var samples = new List<string> {        
-        "./sample/OkHttp3Sample/OkHttp3Sample.sln"
+        "./sample/OkHttp3Sample/OkHttp3Sample.sln",
+        "./sample/LoggingInterceptorSample/LoggingInterceptorSample.sln"
     };
     foreach (var sample in samples) {
         RunNuGetRestore (sample);

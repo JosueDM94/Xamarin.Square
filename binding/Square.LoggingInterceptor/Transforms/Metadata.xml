@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='okhttp3.logging']" name="managedName">Square.OkHttp3.Logging</attr>
+</metadata>

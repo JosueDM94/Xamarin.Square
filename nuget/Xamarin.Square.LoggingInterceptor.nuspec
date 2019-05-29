@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
-        <id>Xamarin.Square.OkHttp3</id>
-        <version>3.12.1</version>
-        <title>OkHttp3</title>
+        <id>Xamarin.Square.Logging-Interceptor</id>
+        <version>3.9.0</version>
+        <title>Logging-Interceptor</title>
         <authors>Josué Díaz</authors>
         <license type="file">LICENSE.txt</license>
         <projectUrl>https://github.com/JosueDM94/Xamarin.Square</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/JosueDM94/Xamarin.Square/master/icons/square_128x128.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>An HTTP+HTTP/2 client for Android and Java applications.</description>
-        <summary>An HTTP+HTTP/2 client for Android and Java applications.</summary>
+        <description>An OkHttp interceptor which logs HTTP request and response data.</description>
+        <summary>An OkHttp interceptor which logs HTTP request and response data.</summary>
         <releaseNotes></releaseNotes>
         <copyright>Square</copyright>
-        <tags>Xamarin Android Monodroid OkHttp OkHttp3 Square</tags>
+        <tags>Xamarin Android Monodroid OkHttp OkHttp3 Square Logging-Interceptor Logging Interceptor LoggingInterceptor</tags>
         <dependencies>
-            <dependency id="Xamarin.Square.OkIO" version="1.15.0"/>
+            <dependency id="Xamarin.Square.OkHttp3" version="3.9.0"/>
         </dependencies>
     </metadata>
     <files>
         <file src="output/README.md" target="README.md" />
-        <file src="output/LICENSE.txt" target="LICENSE.txt" />
-        <file src="output/Square.OkHttp3.dll" target="lib\MonoAndroid\Square.OkHttp3.dll" />
+        <file src="output/LICENSE.txt" target="LICENSE.txt" />        
+        <file src="output/Square.OkIO.dll" target="lib\MonoAndroid\Square.OkIO.dll" />
     </files>
 </package>
