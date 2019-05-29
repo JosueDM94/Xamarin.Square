@@ -29,9 +29,9 @@ public enum TargetOS {
 // VERSIONS
 //////////////////////////////////////////////////////////////////////
 
-const string okio_version                 = "1.17.1"; // OkIO
-const string okhttp3_version              = "3.12.1"; // OkHttp3
-const string logging_interceptor_version  = "3.9.0";  // Logging-Interceptor
+const string okio_version                 = "1.17.2"; // OkIO
+const string okhttp3_version              = "3.12.2"; // OkHttp3
+const string logging_interceptor_version  = "3.9.1";  // Logging-Interceptor
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // TOOLS & FUNCTIONS - the bits to make it all work
