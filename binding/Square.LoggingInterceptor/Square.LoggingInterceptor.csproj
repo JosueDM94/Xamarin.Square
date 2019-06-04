@@ -39,7 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <PackageReference Include="Xamarin.Square.OkHttp3">
-      <Version>3.14.1</Version>
+      <Version>3.14.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

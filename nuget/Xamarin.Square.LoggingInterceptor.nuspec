@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Xamarin.Square.Logging-Interceptor</id>
-        <version>3.14.1</version>
+        <version>3.14.2</version>
         <title>Logging-Interceptor</title>
         <authors>Josué Díaz</authors>
         <license type="file">LICENSE.txt</license>
@@ -15,7 +15,7 @@
         <copyright>Square</copyright>
         <tags>Xamarin Android Monodroid OkHttp OkHttp3 Square Logging-Interceptor Logging Interceptor LoggingInterceptor</tags>
         <dependencies>
-            <dependency id="Xamarin.Square.OkHttp3" version="3.14.1"/>
+            <dependency id="Xamarin.Square.OkHttp3" version="3.14.2"/>
         </dependencies>
     </metadata>
     <files>
